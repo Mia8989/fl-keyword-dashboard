@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
       Built by AI Powered Dahlia →
     </a>
     <a href="${GITHUB_ACTIONS}" target="_blank" class="apd-refresh-btn">↻ Refresh</a>
+    <button class="apd-logout-btn" onclick="(async()=>{if(window.__supabase){await window.__supabase.auth.signOut();window.location.href='login.html';}})()">Sign Out</button>
   </nav>
 </header>`;
 
@@ -228,6 +229,26 @@ document.addEventListener('DOMContentLoaded', function () {
   font-size: 11px;
 }
 .footer-data-note { color: rgba(245,245,245,.3); }
+
+/* ── Sign Out button ────────────────────────────────────── */
+.apd-logout-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(245,245,245,0.45);
+  padding: 7px 13px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  margin-left: 4px;
+  white-space: nowrap;
+  transition: border-color .15s, color .15s;
+}
+.apd-logout-btn:hover {
+  border-color: rgba(255,255,255,0.3);
+  color: var(--apd-text);
+}
 
 /* ── Responsive ─────────────────────────────────────────── */
 @media (max-width: 768px) {

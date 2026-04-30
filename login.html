@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign In | F&L Keyword Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0A0A0A;
+    color: #F5F5F5;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .login-card {
+    background: #161616;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 40px 36px;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .logo-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+  .logo-row img {
+    height: 32px;
+  }
+  .logo-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(245,245,245,0.6);
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: rgba(245,245,245,0.5);
+    margin-bottom: 28px;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 4px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 4px;
+    margin-bottom: 24px;
+  }
+  .tab {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    color: rgba(245,245,245,0.5);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background .15s, color .15s;
+    font-family: 'Inter', sans-serif;
+  }
+  .tab.active {
+    background: rgba(140,82,255,0.2);
+    color: #e9dfff;
+  }
+
+  label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(245,245,245,0.6);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-bottom: 6px;
+  }
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 11px 14px;
+    color: #F5F5F5;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 16px;
+    outline: none;
+    transition: border-color .15s;
+  }
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: rgba(140,82,255,0.6);
+  }
+  input::placeholder { color: rgba(245,245,245,0.25); }
+
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #5ce1e6, #8c52ff);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: opacity .2s;
+    margin-top: 4px;
+  }
+  .btn-primary:hover { opacity: .88; }
+  .btn-primary:disabled { opacity: .5; cursor: not-allowed; }
+
+  .message {
+    margin-top: 16px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    display: none;
+  }
+  .message.success {
+    background: rgba(92,225,230,0.1);
+    border: 1px solid rgba(92,225,230,0.3);
+    color: #5ce1e6;
+  }
+  .message.error {
+    background: rgba(255,80,80,0.1);
+    border: 1px solid rgba(255,80,80,0.3);
+    color: #ff6b6b;
+  }
+
+  .footer-note {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 11px;
+    color: rgba(245,245,245,0.3);
+  }
+</style>
+</head>
+<body>
+
+<div class="login-card">
+  <div class="logo-row">
+    <img src="logo-apd.png" alt="AI Powered Dahlia" onerror="this.style.display='none'">
+    <span class="logo-text">AI Powered Dahlia™</span>
+  </div>
+
+  <h1>Keyword Dashboard</h1>
+  <p class="subtitle">Sign in to access The Frank &amp; Lizzie Show keyword intelligence.</p>
+
+  <div class="tabs">
+    <button class="tab active" id="tab-signin" onclick="switchTab('signin')">Sign In</button>
+    <button class="tab" id="tab-signup" onclick="switchTab('signup')">Register</button>
+  </div>
+
+  <form id="auth-form" onsubmit="handleSubmit(event)">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="you@example.com" required autocomplete="email">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Min. 8 characters" required autocomplete="current-password" minlength="8">
+
+    <button type="submit" class="btn-primary" id="submit-btn">Sign In</button>
+  </form>
+
+  <div class="message" id="message"></div>
+
+  <p class="footer-note">F&amp;L Keyword Dashboard · Powered by AI Powered Dahlia™</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL = 'https://munatpkymqthtfjiwfvn.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11bmF0cGt5bXF0aHRmaml3ZnZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc1MDI0MDAsImV4cCI6MjA5MzA3ODQwMH0.E_OhFSNWCbMpyMDpRDNVB16uX49Spyzbyud_P_aVr3Y';
+const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+let currentTab = 'signin';
+
+// If already logged in, go straight to dashboard
+(async () => {
+  const { data: { session } } = await client.auth.getSession();
+  if (session) window.location.replace('index.html');
+})();
+
+function switchTab(tab) {
+  currentTab = tab;
+  document.getElementById('tab-signin').classList.toggle('active', tab === 'signin');
+  document.getElementById('tab-signup').classList.toggle('active', tab === 'signup');
+  document.getElementById('submit-btn').textContent = tab === 'signin' ? 'Sign In' : 'Create Account';
+  document.getElementById('password').placeholder = tab === 'signin' ? 'Your password' : 'Min. 8 characters';
+  document.getElementById('password').autocomplete = tab === 'signin' ? 'current-password' : 'new-password';
+  hideMessage();
+}
+
+function showMessage(text, type) {
+  const el = document.getElementById('message');
+  el.textContent = text;
+  el.className = 'message ' + type;
+  el.style.display = 'block';
+}
+function hideMessage() {
+  document.getElementById('message').style.display = 'none';
+}
+
+async function handleSubmit(e) {
+  e.preventDefault();
+  const email    = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value;
+  const btn      = document.getElementById('submit-btn');
+
+  btn.disabled = true;
+  btn.textContent = currentTab === 'signin' ? 'Signing in...' : 'Creating account...';
+  hideMessage();
+
+  if (currentTab === 'signin') {
+    const { error } = await client.auth.signInWithPassword({ email, password });
+    if (error) {
+      showMessage(error.message, 'error');
+      btn.disabled = false;
+      btn.textContent = 'Sign In';
+    } else {
+      window.location.replace('index.html');
+    }
+  } else {
+    const { error } = await client.auth.signUp({ email, password });
+    if (error) {
+      showMessage(error.message, 'error');
+      btn.disabled = false;
+      btn.textContent = 'Create Account';
+    } else {
+      showMessage('Account created! Check your email to confirm, then sign in.', 'success');
+      btn.disabled = false;
+      btn.textContent = 'Create Account';
+    }
+  }
+}
+</script>
+</body>
+</html>
