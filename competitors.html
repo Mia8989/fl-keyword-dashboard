@@ -85,21 +85,6 @@ a:hover { text-decoration: underline; }
             text-decoration: none; white-space: nowrap; }
 .view-btn:hover { background: #7c3aed; text-decoration: none; }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script>
-(function() {
-  const client = window.supabase.createClient('https://munatpkymqthtfjiwfvn.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11bmF0cGt5bXF0aHRmaml3ZnZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc1MDI0MDAsImV4cCI6MjA5MzA3ODQwMH0.E_OhFSNWCbMpyMDpRDNVB16uX49Spyzbyud_P_aVr3Y');
-  window.__supabase = client;
-  document.documentElement.style.visibility = 'hidden';
-  client.auth.getSession().then(function(r) {
-    if (!r.data.session) {
-      window.location.replace('login.html');
-    } else {
-      document.documentElement.style.visibility = 'visible';
-    }
-  });
-})();
-</script>
 </head>
 <body>
 
