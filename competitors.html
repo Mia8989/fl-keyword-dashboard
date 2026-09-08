@@ -85,24 +85,39 @@ a:hover { text-decoration: underline; }
             text-decoration: none; white-space: nowrap; }
 .view-btn:hover { background: #7c3aed; text-decoration: none; }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function() {
+  const client = window.supabase.createClient('https://munatpkymqthtfjiwfvn.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11bmF0cGt5bXF0aHRmaml3ZnZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc1MDI0MDAsImV4cCI6MjA5MzA3ODQwMH0.E_OhFSNWCbMpyMDpRDNVB16uX49Spyzbyud_P_aVr3Y');
+  window.__supabase = client;
+  document.documentElement.style.visibility = 'hidden';
+  client.auth.getSession().then(function(r) {
+    if (!r.data.session) {
+      window.location.replace('login.html');
+    } else {
+      document.documentElement.style.visibility = 'visible';
+    }
+  });
+})();
+</script>
 </head>
 <body>
 
     <div class="page-body">
       <h1>Competitor Channel Intelligence</h1>
       <p class="meta">Channels dominating The Frank & Lizzie Show's keyword targets &middot;
-      Updated April 29, 2026 at 07:49 PM &middot;
+      Updated September 08, 2026 at 09:02 PM &middot;
       Sorted by subscriber count</p>
 
       <div class="stats">
         <div class="stat"><div class="label">Channels Tracked</div>
-          <div class="value" style="color:#6B21A8">36</div></div>
+          <div class="value" style="color:#6B21A8">52</div></div>
         <div class="stat"><div class="label">Large (100K+ subs)</div>
-          <div class="value subs-high">12</div></div>
+          <div class="value subs-high">15</div></div>
         <div class="stat"><div class="label">Mid-size (10K-100K)</div>
-          <div class="value subs-mid">10</div></div>
+          <div class="value subs-mid">14</div></div>
         <div class="stat"><div class="label">Small (&lt;10K)</div>
-          <div class="value subs-low">14</div></div>
+          <div class="value subs-low">23</div></div>
       </div>
 
       <div style="background:#faf5ff;border:1px solid #C4B5FD;border-radius:10px;
@@ -127,27 +142,40 @@ a:hover { text-decoration: underline; }
         <tbody>
         <tr>
           <td>
+            <a href="https://youtube.com/channel/UC85VW73bQLEjs_taFKP7TwQ" target="_blank" style="font-weight:700;font-size:14px">Nucleus Medical Media</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Watching Nucleus Medical Media's animations is a faster way for you to learn health and science. Faster than reading, lectures, or</div>
+          </td>
+          <td><span class="subs-high">6.9M</span></td>
+          <td style="color:#475569">2174.6M</td>
+          <td style="color:#475569">690</td>
+          <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">wound debridement techniques</td>
+          <td><a href="https://youtube.com/channel/UC85VW73bQLEjs_taFKP7TwQ" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
             <a href="https://youtube.com/channel/UCPyMN8DzkFl2__xnTEiGZ1w" target="_blank" style="font-weight:700;font-size:14px">RegisteredNurseRN</a>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Nurse Sarah provides NCLEX reviews, skills, school tips, & career help for students and nurses via RegisteredNurseRN.com. Please S</div>
           </td>
-          <td><span class="subs-high">5.3M</span></td>
-          <td style="color:#475569">534.5M</td>
+          <td><span class="subs-high">5.6M</span></td>
+          <td style="color:#475569">560.7M</td>
           <td style="color:#475569">1K</td>
           <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy care nurse, wound care nurse salary</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">wound care certification, ostomy care nurse, wound care nurse salary, ostomy care</td>
           <td><a href="https://youtube.com/channel/UCPyMN8DzkFl2__xnTEiGZ1w" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
-            <a href="https://youtube.com/channel/UCUxQWmWk1_Hk9iDRKvhH29Q" target="_blank" style="font-weight:700;font-size:14px">SimpleNursing</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">SimpleNursing makes nursing school and NCLEX prep simple with engaging video lessons, memory tricks, and practice questions that s</div>
+            <a href="https://youtube.com/channel/UCjv19tb13e5hltJNigVZVqQ" target="_blank" style="font-weight:700;font-size:14px">Florida Training Academy</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">🩺 Welcome to Florida Training Academy!
+I’m Nurse Eunice (Eunice Mathis, MSN-Ed, RN)—nurse educator, entrepreneur, and founder of F</div>
           </td>
-          <td><span class="subs-high">1.6M</span></td>
-          <td style="color:#475569">147.3M</td>
-          <td style="color:#475569">2K</td>
+          <td><span class="subs-high">1.1M</span></td>
+          <td style="color:#475569">382.3M</td>
+          <td style="color:#475569">1K</td>
           <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
           <td style="font-size:11px;color:#64748b;max-width:180px">skin breakdown prevention</td>
-          <td><a href="https://youtube.com/channel/UCUxQWmWk1_Hk9iDRKvhH29Q" target="_blank" class="view-btn">View Channel →</a></td>
+          <td><a href="https://youtube.com/channel/UCjv19tb13e5hltJNigVZVqQ" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
@@ -155,11 +183,11 @@ a:hover { text-decoration: underline; }
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">LEVEL UP NURSE SQUAD
 All of the nurses at Level Up RN are here to help! Cathy Parkes started helping her fellow classmates back wh</div>
           </td>
-          <td><span class="subs-high">803K</span></td>
-          <td style="color:#475569">104.2M</td>
+          <td><span class="subs-high">840K</span></td>
+          <td style="color:#475569">115.7M</td>
           <td style="color:#475569">2K</td>
           <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">wound VAC therapy, WOCN certification, wound care nurse salary, how to treat a pressure ulcer, NPWT dressing change…</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">wound VAC therapy, wound care nurse salary, how to treat a pressure ulcer, wound care continuing education, skin breakdown prevention</td>
           <td><a href="https://youtube.com/channel/UCSlJ8BB17Ex9s4mrg7DEYCw" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
@@ -167,9 +195,9 @@ All of the nurses at Level Up RN are here to help! Cathy Parkes started helping 
             <a href="https://youtube.com/channel/UCxyiSz4m161Z6frOsFxJpgw" target="_blank" style="font-weight:700;font-size:14px">Cleveland Clinic</a>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Cleveland Clinic is a nonprofit multispecialty academic medical center. Founded in 1921, it is dedicated to providing quality spec</div>
           </td>
-          <td><span class="subs-high">733K</span></td>
-          <td style="color:#475569">305.1M</td>
-          <td style="color:#475569">6K</td>
+          <td><span class="subs-high">754K</span></td>
+          <td style="color:#475569">368.9M</td>
+          <td style="color:#475569">7K</td>
           <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
           <td style="font-size:11px;color:#64748b;max-width:180px">how to treat a pressure ulcer</td>
           <td><a href="https://youtube.com/channel/UCxyiSz4m161Z6frOsFxJpgw" target="_blank" class="view-btn">View Channel →</a></td>
@@ -179,35 +207,78 @@ All of the nurses at Level Up RN are here to help! Cathy Parkes started helping 
             <a href="https://youtube.com/channel/UCTCQKg24OrarFSLw1kymxJw" target="_blank" style="font-weight:700;font-size:14px">Cancer Rehab PT</a>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Cancer Rehab PT provides people living with and beyond cancer and lymphedema with education, resources, and support to reclaim con</div>
           </td>
-          <td><span class="subs-high">680K</span></td>
-          <td style="color:#475569">56.6M</td>
-          <td style="color:#475569">486</td>
+          <td><span class="subs-high">740K</span></td>
+          <td style="color:#475569">63.5M</td>
+          <td style="color:#475569">540</td>
           <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
           <td style="font-size:11px;color:#64748b;max-width:180px">lymphedema management</td>
           <td><a href="https://youtube.com/channel/UCTCQKg24OrarFSLw1kymxJw" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
-            <a href="https://youtube.com/channel/UCaAfGX-JgRZ0QUKR1RRw28w" target="_blank" style="font-weight:700;font-size:14px">NURSINGcom w/Jon Haws, RN</a>
+            <a href="https://youtube.com/channel/UCaAfGX-JgRZ0QUKR1RRw28w" target="_blank" style="font-weight:700;font-size:14px">NURSINGcom</a>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Falling behind in nursing school? Feeling lost before the NCLEX?
 It’s not your fault. But now it’s your move.
 
 🎯 The Nursing Schoo</div>
           </td>
-          <td><span class="subs-high">330K</span></td>
-          <td style="color:#475569">43.4M</td>
+          <td><span class="subs-high">335K</span></td>
+          <td style="color:#475569">44.9M</td>
           <td style="color:#475569">2K</td>
           <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy care nurse</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy care nurse, ostomy care, colostomy bag tips</td>
           <td><a href="https://youtube.com/channel/UCaAfGX-JgRZ0QUKR1RRw28w" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCSXXHp3FQfALe_u5Tj1fzCA" target="_blank" style="font-weight:700;font-size:14px">The Patient Story</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Human answers to your cancer questions → www.thepatientstory.com
+
+The Patient Story is led by a dedicated team of medical, editori</div>
+          </td>
+          <td><span class="subs-high">297K</span></td>
+          <td style="color:#475569">161.8M</td>
+          <td style="color:#475569">3K</td>
+          <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">living with ostomy</td>
+          <td><a href="https://youtube.com/channel/UCSXXHp3FQfALe_u5Tj1fzCA" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCyz-CbxobLkt-_3Q6-B-zpA" target="_blank" style="font-weight:700;font-size:14px">Klimek Reviews: Official Home of Klimek Reviews</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">This is the official YouTube home of Klimek Reviews.  We are the only channel that provides authorized Mark Klimek information.  
+</div>
+          </td>
+          <td><span class="subs-high">275K</span></td>
+          <td style="color:#475569">14.1M</td>
+          <td style="color:#475569">304</td>
+          <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">skin breakdown prevention</td>
+          <td><a href="https://youtube.com/channel/UCyz-CbxobLkt-_3Q6-B-zpA" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCBwejc-awS-mANgrkHQ5-6A" target="_blank" style="font-weight:700;font-size:14px">BBC London</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Celebrating the people and stories that matter to our great city. Tap the link to see more 👇
+
+🔗 bbc.co.uk/london
+
+We love to hear </div>
+          </td>
+          <td><span class="subs-high">239K</span></td>
+          <td style="color:#475569">86.6M</td>
+          <td style="color:#475569">2K</td>
+          <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">living with ostomy</td>
+          <td><a href="https://youtube.com/channel/UCBwejc-awS-mANgrkHQ5-6A" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
             <a href="https://youtube.com/channel/UCMla9EyQDlPXUBsWOwmMqZg" target="_blank" style="font-weight:700;font-size:14px">UT MD Anderson Cancer Center</a>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">The University of Texas MD Anderson Cancer Center’s mission is to #EndCancer through patient care, research, education and prevent</div>
           </td>
-          <td><span class="subs-high">218K</span></td>
-          <td style="color:#475569">148.0M</td>
+          <td><span class="subs-high">221K</span></td>
+          <td style="color:#475569">150.3M</td>
           <td style="color:#475569">1K</td>
           <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
           <td style="font-size:11px;color:#64748b;max-width:180px">lymphedema management</td>
@@ -218,8 +289,8 @@ It’s not your fault. But now it’s your move.
             <a href="https://youtube.com/channel/UCqO3GxVYutcugyknCWdAcUA" target="_blank" style="font-weight:700;font-size:14px">NEJM Group</a>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">NEJM Group creates high-quality medical resources for research, learning, practice, and professional development designed to meet </div>
           </td>
-          <td><span class="subs-high">206K</span></td>
-          <td style="color:#475569">64.7M</td>
+          <td><span class="subs-high">212K</span></td>
+          <td style="color:#475569">68.2M</td>
           <td style="color:#475569">3K</td>
           <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
           <td style="font-size:11px;color:#64748b;max-width:180px">venous leg ulcer treatment</td>
@@ -227,27 +298,15 @@ It’s not your fault. But now it’s your move.
         </tr>
         <tr>
           <td>
-            <a href="https://youtube.com/channel/UC1a4RqaEpMsHja5dSlUE1mg" target="_blank" style="font-weight:700;font-size:14px">Medmastery</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Medmastery—the clinical skills academy. We provide innovative medical education so you can live up to your full potential. Most of</div>
-          </td>
-          <td><span class="subs-high">200K</span></td>
-          <td style="color:#475569">26.1M</td>
-          <td style="color:#475569">774</td>
-          <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">negative pressure wound therapy</td>
-          <td><a href="https://youtube.com/channel/UC1a4RqaEpMsHja5dSlUE1mg" target="_blank" class="view-btn">View Channel →</a></td>
-        </tr>
-        <tr>
-          <td>
             <a href="https://youtube.com/channel/UC284Za0seKV8WGZJO4gltFg" target="_blank" style="font-weight:700;font-size:14px">Lecturio Nursing</a>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Our NCLEX-RN learning path is live! Check out our step-by-step guide for you to easily follow and succeed!
 http://lectur.io/ngndes</div>
           </td>
-          <td><span class="subs-high">181K</span></td>
-          <td style="color:#475569">19.6M</td>
-          <td style="color:#475569">992</td>
+          <td><span class="subs-high">189K</span></td>
+          <td style="color:#475569">21.3M</td>
+          <td style="color:#475569">931</td>
           <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy care nurse</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy pouching system</td>
           <td><a href="https://youtube.com/channel/UC284Za0seKV8WGZJO4gltFg" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
@@ -257,9 +316,9 @@ http://lectur.io/ngndes</div>
 
 So if you want to save a life when you have li</div>
           </td>
-          <td><span class="subs-high">167K</span></td>
-          <td style="color:#475569">21.8M</td>
-          <td style="color:#475569">226</td>
+          <td><span class="subs-high">166K</span></td>
+          <td style="color:#475569">22.1M</td>
+          <td style="color:#475569">235</td>
           <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
           <td style="font-size:11px;color:#64748b;max-width:180px">wound debridement techniques</td>
           <td><a href="https://youtube.com/channel/UCKK6DIRs9X45S4E_GEAGa8w" target="_blank" class="view-btn">View Channel →</a></td>
@@ -269,26 +328,60 @@ So if you want to save a life when you have li</div>
             <a href="https://youtube.com/channel/UC49JYhKBzUidtsDzG-SmFEA" target="_blank" style="font-weight:700;font-size:14px">Lee Health</a>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Looking for the latest and most relevant medical news? Look no further than Lee Health. Our "Health Matters" stories feature insig</div>
           </td>
-          <td><span class="subs-high">163K</span></td>
-          <td style="color:#475569">57.5M</td>
+          <td><span class="subs-high">164K</span></td>
+          <td style="color:#475569">58.3M</td>
           <td style="color:#475569">4K</td>
           <td style="font-size:12px;color:#64748b">Large channel — hard to outrank directly on shared keywords.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">wound VAC therapy, negative pressure wound therapy</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">negative pressure wound therapy</td>
           <td><a href="https://youtube.com/channel/UC49JYhKBzUidtsDzG-SmFEA" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
-            <a href="https://youtube.com/channel/UCjuQEbitSmOpqrlgwQMhzQw" target="_blank" style="font-weight:700;font-size:14px"> VeinCare Academy</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Attract Patients & Clients to Your Private Medical or Aesthetic Clinic and Profit More!
-
-Are you a doctor or nurse in private prac</div>
+            <a href="https://youtube.com/channel/UCIZ8lKJi8zKWkLsBRGSyLbw" target="_blank" style="font-weight:700;font-size:14px">TVASurg</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">The Toronto Video Atlas of Surgery is a collection of 3d-reconstructions and graphic-assisted surgical videos. The Atlas aims to i</div>
           </td>
-          <td><span class="subs-mid">67K</span></td>
-          <td style="color:#475569">11.8M</td>
-          <td style="color:#475569">592</td>
+          <td><span class="subs-mid">80K</span></td>
+          <td style="color:#475569">33.7M</td>
+          <td style="color:#475569">181</td>
+          <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy reversal</td>
+          <td><a href="https://youtube.com/channel/UCIZ8lKJi8zKWkLsBRGSyLbw" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCTbhS5-KTEKzBh-eqeU5vAw" target="_blank" style="font-weight:700;font-size:14px">WKBN27</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">WKBN 27 First News. Investigative. In-Depth. In The Valley.</div>
+          </td>
+          <td><span class="subs-mid">75K</span></td>
+          <td style="color:#475569">66.0M</td>
+          <td style="color:#475569">90K</td>
+          <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy support groups</td>
+          <td><a href="https://youtube.com/channel/UCTbhS5-KTEKzBh-eqeU5vAw" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCjuQEbitSmOpqrlgwQMhzQw" target="_blank" style="font-weight:700;font-size:14px"> VeinCare Academy</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Training for doctors, nurses, and aesthetic practitioners who want to master cosmetic vein treatment and build a profitable privat</div>
+          </td>
+          <td><span class="subs-mid">68K</span></td>
+          <td style="color:#475569">12.0M</td>
+          <td style="color:#475569">606</td>
           <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
           <td style="font-size:11px;color:#64748b;max-width:180px">venous leg ulcer treatment</td>
           <td><a href="https://youtube.com/channel/UCjuQEbitSmOpqrlgwQMhzQw" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UC_cGqEaNB_Ndmh_QA1paIVQ" target="_blank" style="font-weight:700;font-size:14px">Lymphatic Education & Research Network (LE&RN)</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">LE&RN's mission is to fight lymphatic diseases through education, research & advocacy. We seek to accelerate the prevention, treat</div>
+          </td>
+          <td><span class="subs-mid">35K</span></td>
+          <td style="color:#475569">2.7M</td>
+          <td style="color:#475569">422</td>
+          <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">lymphedema management</td>
+          <td><a href="https://youtube.com/channel/UC_cGqEaNB_Ndmh_QA1paIVQ" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
@@ -296,8 +389,8 @@ Are you a doctor or nurse in private prac</div>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">The world needs you at your best, so we create breakthrough solutions that help you save valuable time and restore patients' lives</div>
           </td>
           <td><span class="subs-mid">32K</span></td>
-          <td style="color:#475569">9.4M</td>
-          <td style="color:#475569">513</td>
+          <td style="color:#475569">9.8M</td>
+          <td style="color:#475569">563</td>
           <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
           <td style="font-size:11px;color:#64748b;max-width:180px">wound VAC therapy</td>
           <td><a href="https://youtube.com/channel/UC5YMTGTO7q3BdgtAHsbp6BQ" target="_blank" class="view-btn">View Channel →</a></td>
@@ -311,10 +404,10 @@ About Me
 I was born in Jamai</div>
           </td>
           <td><span class="subs-mid">30K</span></td>
-          <td style="color:#475569">2.9M</td>
-          <td style="color:#475569">278</td>
+          <td style="color:#475569">3.0M</td>
+          <td style="color:#475569">284</td>
           <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">wound care continuing education</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">WOCN certification, wound care nurse salary</td>
           <td><a href="https://youtube.com/channel/UC1GBD4TmF5BeKuFsJf3IE_A" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
@@ -322,83 +415,97 @@ I was born in Jamai</div>
             <a href="https://youtube.com/channel/UCGGD4eqJUFjPU4eZn1QXNzw" target="_blank" style="font-weight:700;font-size:14px">WoundEducators.com</a>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">WoundEducators offers 24/7 online courses to allow you to study for wound certification at your preferred time, pace, and location</div>
           </td>
-          <td><span class="subs-mid">24K</span></td>
-          <td style="color:#475569">5.0M</td>
+          <td><span class="subs-mid">25K</span></td>
+          <td style="color:#475569">5.1M</td>
           <td style="color:#475569">57</td>
           <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">wound care certification</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">wound care certification, wound care continuing education</td>
           <td><a href="https://youtube.com/channel/UCGGD4eqJUFjPU4eZn1QXNzw" target="_blank" class="view-btn">View Channel →</a></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://youtube.com/channel/UC46wrxZhLxDgTUldXppMO9Q" target="_blank" style="font-weight:700;font-size:14px">Ausmed</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Hi, we're Ausmed! We're an Australian healthcare education provider that equips individuals, teams, and organisations with the sof</div>
-          </td>
-          <td><span class="subs-mid">22K</span></td>
-          <td style="color:#475569">5.0M</td>
-          <td style="color:#475569">238</td>
-          <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">wound debridement techniques</td>
-          <td><a href="https://youtube.com/channel/UC46wrxZhLxDgTUldXppMO9Q" target="_blank" class="view-btn">View Channel →</a></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://youtube.com/channel/UCWLo-psfc1nVjZ4eZ4p3Ykw" target="_blank" style="font-weight:700;font-size:14px">OncoPelvic PT</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Hi! I’m Dr. Alex Hill, your physical therapist for everything oncology, pelvic health, and lymphedema. My mission is to help you b</div>
-          </td>
-          <td><span class="subs-mid">20K</span></td>
-          <td style="color:#475569">1.5M</td>
-          <td style="color:#475569">356</td>
-          <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">lymphedema management</td>
-          <td><a href="https://youtube.com/channel/UCWLo-psfc1nVjZ4eZ4p3Ykw" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
             <a href="https://youtube.com/channel/UCk5A189-7824K1WdGKA4sQg" target="_blank" style="font-weight:700;font-size:14px">Practice Test Geeks</a>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px"></div>
           </td>
-          <td><span class="subs-mid">17K</span></td>
-          <td style="color:#475569">2.0M</td>
+          <td><span class="subs-mid">22K</span></td>
+          <td style="color:#475569">2.9M</td>
           <td style="color:#475569">3K</td>
           <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">wound care continuing education, WCC exam prep</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">WCC exam prep, ostomy nurse certification</td>
           <td><a href="https://youtube.com/channel/UCk5A189-7824K1WdGKA4sQg" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
-            <a href="https://youtube.com/channel/UCDzTBDWHvj7VOTKrBgIYQ5g" target="_blank" style="font-weight:700;font-size:14px">AHRQ Patient Safety</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">The Agency for Healthcare Research and Quality (AHRQ) investigates the ways that patients are harmed, why this harm occurs, and ho</div>
+            <a href="https://youtube.com/channel/UCJw2A4rMu7NHI-uFaneJr0g" target="_blank" style="font-weight:700;font-size:14px">Shield HealthCare</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Shield HealthCare has been helping people with a need for disposable medical products live comfortably at home and is dedicated to</div>
           </td>
-          <td><span class="subs-mid">13K</span></td>
-          <td style="color:#475569">4.3M</td>
-          <td style="color:#475569">566</td>
+          <td><span class="subs-mid">22K</span></td>
+          <td style="color:#475569">7.2M</td>
+          <td style="color:#475569">242</td>
           <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">skin breakdown prevention</td>
-          <td><a href="https://youtube.com/channel/UCDzTBDWHvj7VOTKrBgIYQ5g" target="_blank" class="view-btn">View Channel →</a></td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">colostomy bag tips, ostomate lifestyle</td>
+          <td><a href="https://youtube.com/channel/UCJw2A4rMu7NHI-uFaneJr0g" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
-            <a href="https://youtube.com/channel/UCpJRXGznG9AqHBo9O7j40UQ" target="_blank" style="font-weight:700;font-size:14px">Convatec USA</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">At Convatec, we’re on a journey to #ForeverCaring and pioneering trusted medical solutions to improve the lives we touch. It’s our</div>
+            <a href="https://youtube.com/channel/UCdCpuR_tEjx6NGLx6fFIS1Q" target="_blank" style="font-weight:700;font-size:14px">Vegan Ostomy</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">This channel is dedicated to helping people with IBD or an ostomy through product reviews, tips and commentary. My content is crea</div>
+          </td>
+          <td><span class="subs-mid">22K</span></td>
+          <td style="color:#475569">4.2M</td>
+          <td style="color:#475569">170</td>
+          <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ileostomy care tips</td>
+          <td><a href="https://youtube.com/channel/UCdCpuR_tEjx6NGLx6fFIS1Q" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UC5nxGCdHq_K42l-2XABnRdg" target="_blank" style="font-weight:700;font-size:14px">University of Iowa Health Care</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">We are committed to providing patient-focused care—available to every person, around the clock—in an environment devoted to innova</div>
+          </td>
+          <td><span class="subs-mid">21K</span></td>
+          <td style="color:#475569">9.2M</td>
+          <td style="color:#475569">1K</td>
+          <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy pouching system</td>
+          <td><a href="https://youtube.com/channel/UC5nxGCdHq_K42l-2XABnRdg" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCwT1s_RDnUJLgyxt-J2L_pA" target="_blank" style="font-weight:700;font-size:14px">Survivor Jelena</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Are you or a loved one a cancer survivor?  Have you been diagnosed with cancer & are wondering what to expect?  Just interested in</div>
+          </td>
+          <td><span class="subs-mid">15K</span></td>
+          <td style="color:#475569">2.7M</td>
+          <td style="color:#475569">145</td>
+          <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy reversal</td>
+          <td><a href="https://youtube.com/channel/UCwT1s_RDnUJLgyxt-J2L_pA" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UC3I-I12TxzSinhNOWTSzZCw" target="_blank" style="font-weight:700;font-size:14px">Stealth Belt Inc.</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Stealth Belt Channel is here to help your learn about the benefits of living with a Stealth Belt. We are here to help show you how</div>
           </td>
           <td><span class="subs-mid">12K</span></td>
-          <td style="color:#475569">5.6M</td>
-          <td style="color:#475569">325</td>
+          <td style="color:#475569">5.5M</td>
+          <td style="color:#475569">275</td>
           <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">peristomal skin care</td>
-          <td><a href="https://youtube.com/channel/UCpJRXGznG9AqHBo9O7j40UQ" target="_blank" class="view-btn">View Channel →</a></td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">colostomy bag tips, ostomy support groups, ostomate lifestyle</td>
+          <td><a href="https://youtube.com/channel/UC3I-I12TxzSinhNOWTSzZCw" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
             <a href="https://youtube.com/channel/UCNfCPksdUFEEDrb0yD9v9kA" target="_blank" style="font-weight:700;font-size:14px">Skilled Physicians Group I Skilled Wound Care</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Skilled Wound Care provides professional wound, skin, ostomy services to skilled nursing facilities. Give us a call today for more</div>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px"> Healing shouldn't depend on whether a patient can reach a clinic.
+
+Skilled Wound Care physicians treat wounds at the bedside, in </div>
           </td>
           <td><span class="subs-mid">11K</span></td>
-          <td style="color:#475569">4.9M</td>
-          <td style="color:#475569">188</td>
+          <td style="color:#475569">5.0M</td>
+          <td style="color:#475569">196</td>
           <td style="font-size:12px;color:#64748b">Mid-size channel — beatable with a more comprehensive video.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">wound care certification</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">wound care certification, WOCN certification</td>
           <td><a href="https://youtube.com/channel/UCNfCPksdUFEEDrb0yD9v9kA" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
@@ -408,10 +515,10 @@ I was born in Jamai</div>
 We have physicians in thousands of skilled nursing facil</div>
           </td>
           <td><span class="subs-low">9K</span></td>
-          <td style="color:#475569">4.7M</td>
-          <td style="color:#475569">127</td>
+          <td style="color:#475569">4.9M</td>
+          <td style="color:#475569">126</td>
           <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">negative pressure wound therapy</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">wound VAC therapy, negative pressure wound therapy, NPWT dressing change</td>
           <td><a href="https://youtube.com/channel/UC7HDhGB3giRf1c94BYHvAnA" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
@@ -419,12 +526,24 @@ We have physicians in thousands of skilled nursing facil</div>
             <a href="https://youtube.com/channel/UCCVYLIM0thHwv7vGezDemaA" target="_blank" style="font-weight:700;font-size:14px">Leicester's Hospitals</a>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Home of Leicester’s Hospitals, we aim to be leading in healthcare and trusted in communities. Proud to be #TeamUHL</div>
           </td>
-          <td><span class="subs-low">5K</span></td>
-          <td style="color:#475569">2.9M</td>
-          <td style="color:#475569">190</td>
+          <td><span class="subs-low">6K</span></td>
+          <td style="color:#475569">3.1M</td>
+          <td style="color:#475569">191</td>
           <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
           <td style="font-size:11px;color:#64748b;max-width:180px">how to treat a pressure ulcer</td>
           <td><a href="https://youtube.com/channel/UCCVYLIM0thHwv7vGezDemaA" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCOnaRRVqTGY8jiHdICNoQFw" target="_blank" style="font-weight:700;font-size:14px">Allied Health Career Training</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px"></div>
+          </td>
+          <td><span class="subs-low">6K</span></td>
+          <td style="color:#475569">954K</td>
+          <td style="color:#475569">183</td>
+          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy care nurse</td>
+          <td><a href="https://youtube.com/channel/UCOnaRRVqTGY8jiHdICNoQFw" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
@@ -432,23 +551,73 @@ We have physicians in thousands of skilled nursing facil</div>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Hollister Incorporated is an independent, employee-owned company that develops, manufactures, and markets healthcare products and </div>
           </td>
           <td><span class="subs-low">5K</span></td>
-          <td style="color:#475569">2.3M</td>
-          <td style="color:#475569">294</td>
+          <td style="color:#475569">2.4M</td>
+          <td style="color:#475569">297</td>
           <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">peristomal skin care</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">peristomal skin care, ostomy pouching system</td>
           <td><a href="https://youtube.com/channel/UCR5cHCZ7UN0AqNh8jyDaFuQ" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
-            <a href="https://youtube.com/channel/UCON8nECYLX-mt4YXqEKDk2A" target="_blank" style="font-weight:700;font-size:14px">Nursing Knowledge Exchange</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Welcome to Nursing Knowledge Exchange, your go-to resource for all things nursing! Our channel is dedicated to empowering nurses a</div>
+            <a href="https://youtube.com/channel/UCEttVEuJJkHf_fNR3NN5LtA" target="_blank" style="font-weight:700;font-size:14px">Heagi Ostomy Care</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">HEAGI Stoma Care Supplies
+❤️Care with Heart🫶Live with Ease
+🌈HEAGI is not just a brand; it is the steadfast support for every ostom</div>
+          </td>
+          <td><span class="subs-low">5K</span></td>
+          <td style="color:#475569">6.0M</td>
+          <td style="color:#475569">110</td>
+          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ostomate lifestyle</td>
+          <td><a href="https://youtube.com/channel/UCEttVEuJJkHf_fNR3NN5LtA" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCNWy-EGR2RUmBKtCgfK36dg" target="_blank" style="font-weight:700;font-size:14px">exam practice and quizzes</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">We provide verified and up-to-date study resources to help students pass faster and study smarter. Our materials are designed to s</div>
+          </td>
+          <td><span class="subs-low">4K</span></td>
+          <td style="color:#475569">542K</td>
+          <td style="color:#475569">5K</td>
+          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">WCC exam prep</td>
+          <td><a href="https://youtube.com/channel/UCNWy-EGR2RUmBKtCgfK36dg" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UC9bgttSmfSre_4uifjzP4ew" target="_blank" style="font-weight:700;font-size:14px">FOCUS Broadband</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">A broadband driven company, FOCUS Broadband’s mission is to provide the very best high-speed internet connection to residents and </div>
           </td>
           <td><span class="subs-low">3K</span></td>
-          <td style="color:#475569">641K</td>
-          <td style="color:#475569">9K</td>
+          <td style="color:#475569">1.9M</td>
+          <td style="color:#475569">2K</td>
           <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">wound care nurse salary</td>
-          <td><a href="https://youtube.com/channel/UCON8nECYLX-mt4YXqEKDk2A" target="_blank" class="view-btn">View Channel →</a></td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy support groups</td>
+          <td><a href="https://youtube.com/channel/UC9bgttSmfSre_4uifjzP4ew" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCyBjhY8uL3EDL72i-7FYZ-A" target="_blank" style="font-weight:700;font-size:14px">180medical</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">180 Medical specializes in supplying intermittent catheter products and ostomy supplies for men, women, and children. 180 Medical </div>
+          </td>
+          <td><span class="subs-low">3K</span></td>
+          <td style="color:#475569">766K</td>
+          <td style="color:#475569">149</td>
+          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ileostomy care tips</td>
+          <td><a href="https://youtube.com/channel/UCyBjhY8uL3EDL72i-7FYZ-A" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCRlyCKqtyqDIyfDbLhaFqQg" target="_blank" style="font-weight:700;font-size:14px">StomaBags.com</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Stomabags is an online retailer of ostomy bags and belts, wound care, and skin care products. We pursue commercial goals, but we a</div>
+          </td>
+          <td><span class="subs-low">3K</span></td>
+          <td style="color:#475569">2.1M</td>
+          <td style="color:#475569">439</td>
+          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">peristomal skin care</td>
+          <td><a href="https://youtube.com/channel/UCRlyCKqtyqDIyfDbLhaFqQg" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
@@ -458,25 +627,11 @@ We have physicians in thousands of skilled nursing facil</div>
 Medela Surgical Care is a global manufacturer of medical vacuum solutions, respected and trusted by doc</div>
           </td>
           <td><span class="subs-low">3K</span></td>
-          <td style="color:#475569">2.5M</td>
-          <td style="color:#475569">414</td>
+          <td style="color:#475569">3.3M</td>
+          <td style="color:#475569">422</td>
           <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
           <td style="font-size:11px;color:#64748b;max-width:180px">NPWT dressing change</td>
           <td><a href="https://youtube.com/channel/UCG1Gv8r05e-wnUU8n4MHIfA" target="_blank" class="view-btn">View Channel →</a></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://youtube.com/channel/UCO-EPezgohiN6SO8uNCJxcg" target="_blank" style="font-weight:700;font-size:14px">The Wound Doc  </a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Dr. Cassandre Voltaire, DO, ABWMS
-
-I'm a certified Wound Care and Board Certified Family Medicine physician here to make wound car</div>
-          </td>
-          <td><span class="subs-low">2K</span></td>
-          <td style="color:#475569">157K</td>
-          <td style="color:#475569">102</td>
-          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">venous leg ulcer treatment</td>
-          <td><a href="https://youtube.com/channel/UCO-EPezgohiN6SO8uNCJxcg" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
@@ -484,11 +639,23 @@ I'm a certified Wound Care and Board Certified Family Medicine physician here to
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Welcome to MyTestExamPrep – your trusted destination for high-quality exam preparation videos across Medical, Nursing, Food Safety</div>
           </td>
           <td><span class="subs-low">2K</span></td>
-          <td style="color:#475569">116K</td>
-          <td style="color:#475569">120</td>
+          <td style="color:#475569">183K</td>
+          <td style="color:#475569">146</td>
           <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">WCC exam prep</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">wound care continuing education, WCC exam prep</td>
           <td><a href="https://youtube.com/channel/UCjYxb3PZy9z5VZtPWRXKfBA" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCA6Dl3eEdpl0_Y8UDgkh6kA" target="_blank" style="font-weight:700;font-size:14px">UOAA_Ostomy</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px"></div>
+          </td>
+          <td><span class="subs-low">2K</span></td>
+          <td style="color:#475569">453K</td>
+          <td style="color:#475569">112</td>
+          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">living with ostomy, UOAA ostomy</td>
+          <td><a href="https://youtube.com/channel/UCA6Dl3eEdpl0_Y8UDgkh6kA" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
@@ -496,11 +663,23 @@ I'm a certified Wound Care and Board Certified Family Medicine physician here to
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Welcome to Ostomy Care with Angel Face Amy! Certified wound and ostomy nurse Amy shares evidence-based tips, product advice, and s</div>
           </td>
           <td><span class="subs-low">2K</span></td>
-          <td style="color:#475569">93K</td>
-          <td style="color:#475569">40</td>
+          <td style="color:#475569">128K</td>
+          <td style="color:#475569">43</td>
           <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">peristomal skin care</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ileostomy care tips</td>
           <td><a href="https://youtube.com/channel/UCAS0xGbwoCaq3PVHhCn5nNQ" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCyGGfgwkHceUQxP-ZZQgCJw" target="_blank" style="font-weight:700;font-size:14px">Better Health</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Better Health is an innovative new type of medical provider offering an end-to-end care solution, bundling clinical consultation, </div>
+          </td>
+          <td><span class="subs-low">2K</span></td>
+          <td style="color:#475569">93K</td>
+          <td style="color:#475569">41</td>
+          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">UOAA ostomy</td>
+          <td><a href="https://youtube.com/channel/UCyGGfgwkHceUQxP-ZZQgCJw" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
@@ -508,7 +687,7 @@ I'm a certified Wound Care and Board Certified Family Medicine physician here to
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px"></div>
           </td>
           <td><span class="subs-low">1K</span></td>
-          <td style="color:#475569">336K</td>
+          <td style="color:#475569">349K</td>
           <td style="color:#475569">5</td>
           <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
           <td style="font-size:11px;color:#64748b;max-width:180px">NPWT dressing change</td>
@@ -516,65 +695,103 @@ I'm a certified Wound Care and Board Certified Family Medicine physician here to
         </tr>
         <tr>
           <td>
-            <a href="https://youtube.com/channel/UCxLZBJ3Ynv86-0MF-PPxXPw" target="_blank" style="font-weight:700;font-size:14px">The Operating Table</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Welcome to The Operating Table, where we bring the world of surgery right to your screen. Our channel is dedicated to sharing know</div>
+            <a href="https://youtube.com/channel/UCpnunRyJC5yq57IrdFlU-WQ" target="_blank" style="font-weight:700;font-size:14px">Wound Care Advantage</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">For over two decades, we’ve been wound care mavericks. We’re driven by innovation and technology to provide exceptional care. At o</div>
           </td>
           <td><span class="subs-low">1K</span></td>
-          <td style="color:#475569">323K</td>
-          <td style="color:#475569">946</td>
+          <td style="color:#475569">362K</td>
+          <td style="color:#475569">607</td>
           <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">wound debridement techniques</td>
-          <td><a href="https://youtube.com/channel/UCxLZBJ3Ynv86-0MF-PPxXPw" target="_blank" class="view-btn">View Channel →</a></td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">negative pressure wound therapy</td>
+          <td><a href="https://youtube.com/channel/UCpnunRyJC5yq57IrdFlU-WQ" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
-            <a href="https://youtube.com/channel/UCZrWeAEor19i99CQK1n8EVQ" target="_blank" style="font-weight:700;font-size:14px">CertMedbry</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Welcome to Certmedbry, a comprehensive platform dedicated to advancing knowledge in the fields of medicine, healthcare, and veteri</div>
+            <a href="https://youtube.com/channel/UCh15ed4N1iWcBf1ILDOUgQA" target="_blank" style="font-weight:700;font-size:14px">That Ostomy Nurse🍓</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">  Hi! I'm Kristen🫶🏻 BSN RN COCN
+That Ostomy Nurse with an Ostomy 
+     Married, Mama of 3, Crohnie</div>
           </td>
-          <td><span class="subs-low">744</span></td>
-          <td style="color:#475569">40K</td>
-          <td style="color:#475569">1K</td>
-          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">WCC exam prep</td>
-          <td><a href="https://youtube.com/channel/UCZrWeAEor19i99CQK1n8EVQ" target="_blank" class="view-btn">View Channel →</a></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://youtube.com/channel/UCYJDHldskaoNRShlfB4Fhbg" target="_blank" style="font-weight:700;font-size:14px">TheWOCNCB</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">The Wound, Ostomy and Continence Nursing Certification Board is a professional, non-profit, 501 (c) (6) organization dedicated to </div>
-          </td>
-          <td><span class="subs-low">511</span></td>
-          <td style="color:#475569">517K</td>
-          <td style="color:#475569">54</td>
-          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">WOCN certification</td>
-          <td><a href="https://youtube.com/channel/UCYJDHldskaoNRShlfB4Fhbg" target="_blank" class="view-btn">View Channel →</a></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://youtube.com/channel/UC-HmLhrpn8ZOTBdh6ZsDkTg" target="_blank" style="font-weight:700;font-size:14px">ABWM Certified</a>
-            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">The American Board of Wound Management is the standard of excellence in multidisciplinary wound certification. The ABWM offers thr</div>
-          </td>
-          <td><span class="subs-low">145</span></td>
-          <td style="color:#475569">9K</td>
+          <td><span class="subs-low">1K</span></td>
+          <td style="color:#475569">384K</td>
           <td style="color:#475569">18</td>
           <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">wound care certification</td>
-          <td><a href="https://youtube.com/channel/UC-HmLhrpn8ZOTBdh6ZsDkTg" target="_blank" class="view-btn">View Channel →</a></td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">peristomal skin care</td>
+          <td><a href="https://youtube.com/channel/UCh15ed4N1iWcBf1ILDOUgQA" target="_blank" class="view-btn">View Channel →</a></td>
         </tr>
         <tr>
           <td>
-            <a href="https://youtube.com/channel/UC5f3fx_yVrjUG2GE4MoJasw" target="_blank" style="font-weight:700;font-size:14px">Chris Eddun</a>
+            <a href="https://youtube.com/channel/UCx0aeZebDSLAWfUsGbHSomQ" target="_blank" style="font-weight:700;font-size:14px">OrthoNeuro</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">OrthoNeuro is a Multi-Specialty Center of Excellence specializing in the diagnosis, treatment, rehabilitation and prevention of mu</div>
+          </td>
+          <td><span class="subs-low">996</span></td>
+          <td style="color:#475569">673K</td>
+          <td style="color:#475569">223</td>
+          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">venous leg ulcer treatment</td>
+          <td><a href="https://youtube.com/channel/UCx0aeZebDSLAWfUsGbHSomQ" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UC2ei3J-FTsQPjmSn-nQcqgA" target="_blank" style="font-weight:700;font-size:14px">Yeovil Hospital</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">The YouTube Channel for Yeovil Hospital staff, partners and patients</div>
+          </td>
+          <td><span class="subs-low">807</span></td>
+          <td style="color:#475569">184K</td>
+          <td style="color:#475569">226</td>
+          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy reversal</td>
+          <td><a href="https://youtube.com/channel/UC2ei3J-FTsQPjmSn-nQcqgA" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCUXD5cwx0CRFxqLQOitODKQ" target="_blank" style="font-weight:700;font-size:14px">ExamPrepadvantage</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">https://quizzprep.com/</div>
+          </td>
+          <td><span class="subs-low">371</span></td>
+          <td style="color:#475569">42K</td>
+          <td style="color:#475569">2K</td>
+          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy nurse certification</td>
+          <td><a href="https://youtube.com/channel/UCUXD5cwx0CRFxqLQOitODKQ" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UC5f3fx_yVrjUG2GE4MoJasw" target="_blank" style="font-weight:700;font-size:14px">Chris E.</a>
             <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Hi! I'm Chris. Follow me for videos about nursing, wound care, travel vlogs, and more. :)
 
 Linktr.ee/thewoundmaster</div>
           </td>
-          <td><span class="subs-low">132</span></td>
-          <td style="color:#475569">4K</td>
-          <td style="color:#475569">9</td>
+          <td><span class="subs-low">190</span></td>
+          <td style="color:#475569">7K</td>
+          <td style="color:#475569">11</td>
           <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
-          <td style="font-size:11px;color:#64748b;max-width:180px">WOCN certification</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">WOCN certification, ostomy nurse certification</td>
           <td><a href="https://youtube.com/channel/UC5f3fx_yVrjUG2GE4MoJasw" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCV7KVHZbCWypAi4nsYphVIQ" target="_blank" style="font-weight:700;font-size:14px">Restore First Health</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px">Restore First Health is an advanced mobile health care provider transforming how chronic wounds and conditions are treated. We del</div>
+          </td>
+          <td><span class="subs-low">183</span></td>
+          <td style="color:#475569">3.0M</td>
+          <td style="color:#475569">87</td>
+          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">wound debridement techniques</td>
+          <td><a href="https://youtube.com/channel/UCV7KVHZbCWypAi4nsYphVIQ" target="_blank" class="view-btn">View Channel →</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://youtube.com/channel/UCeysG14ISDd8sup3nvxfVoA" target="_blank" style="font-weight:700;font-size:14px">Southeast Senior Services</a>
+            <div style="font-size:11px;color:#94a3b8;margin-top:3px;max-width:240px"></div>
+          </td>
+          <td><span class="subs-low">32</span></td>
+          <td style="color:#475569">4K</td>
+          <td style="color:#475569">20</td>
+          <td style="font-size:12px;color:#64748b">Small channel — you can outrank them with good SEO.</td>
+          <td style="font-size:11px;color:#64748b;max-width:180px">ostomy care</td>
+          <td><a href="https://youtube.com/channel/UCeysG14ISDd8sup3nvxfVoA" target="_blank" class="view-btn">View Channel →</a></td>
         </tr></tbody>
       </table>
     </div>
